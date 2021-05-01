@@ -1,16 +1,18 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
+import Body from "../components/body"
+import Footer from "../components/footer"
 import Header from "../components/header"
-import SEO from "../components/seo"
+
+import "../styles/global.css"
 
 const IndexPage = () => (
-  <div>
-    <Header/>
-    <Body/>
-    <Footer/>
+  <div class="site-container">
+    <div class="site-content-container">
+      <Header/>
+      <Body/>
+      <Footer/>
+    </div>
   </div>
 )
 

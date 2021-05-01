@@ -1,0 +1,129 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Index */
+.site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.site-content-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/* Category Group */
+.category-group-container {
+  margin-bottom: 50px;
+}
+
+.category-group-container h2 {
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* Checklist Item */
+.checklist-item {
+  padding: 8px 8px 8px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.checklist-item-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checklist-item-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.checklist-item h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.context {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.context-hidden {
+  opacity: 0;
+  font-size: 0;
+  transition: opacity .25s, font-size .5s .25s;
+}
+
+.context-expanded {
+  transition: font-size .25s, opacity .5s .25s;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-sharing-container {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-container span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .header-container h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .category-group-container h2 {
+    font-size: 24px;
+  }
+
+  .checklist-item h3 {
+    font-size: 14px;
+  }
+}
